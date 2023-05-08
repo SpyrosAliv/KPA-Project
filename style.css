@@ -1,42 +1,40 @@
 body {
-    background: rgb(53,5,97);
-    background: radial-gradient(circle, rgba(53,5,97,1) 0%, rgba(8,16,55,1) 100%);
-}
-
-* {
+    background: rgb(41,5,70);
+    background: radial-gradient(circle, rgba(41,5,70,1) 0%, rgba(16,0,125,1) 100%);
+} * {
     font-family: 'Montserrat', sans-serif;
     padding: 0px;
     margin: 0px;
     border: 0px;
-}
-#main-div {
+} p {
+    font-size: 27px;
+    color: rgb(206, 204, 242);
+    opacity: 95%;
+} .info-text {
+    padding: 20px;
+} #starting-title {
     height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#menu {
+} #menu {
     background-color: aliceblue;
     height: fit-content;
     opacity: 75%;
     text-align: center;
-}
-.menu-item {
+} .menu-item {
     background-color: aliceblue;
-    margin: 2px 40px 6px 0px;
+    margin: 2px 100px 6px 0px;
     font-size: 4vh;
     border-width: 100%;
     color: rgb(4, 11, 45);
-}
-.menu-item:hover {
+} .menu-item:hover {
     opacity: 65%;
     cursor: pointer;
-}
-.menu-item:active {
+}.menu-item:active {
     opacity: 35%;
-}
-.heading {
+} .bigTitle {
     font-size: 90px;
     font-weight: 800;
     opacity: 82%;
@@ -44,4 +42,7 @@ body {
     word-spacing: 7px;
     letter-spacing: 4px;
     text-align: center;
+} .info-paragraph {
+    text-align: center;
+    padding: 40px 20px 10px 20px;
 }
