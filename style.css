@@ -1,0 +1,47 @@
+body {
+    background: rgb(7,17,69);
+    background: radial-gradient(circle, rgba(7,17,69,1) 0%, rgba(8,16,55,1) 100%);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#main-div {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu {
+    background-color: aliceblue;
+    height: fit-content;
+    opacity: 75%;
+    text-align: center;
+}
+.menu-item {
+    background-color: aliceblue;
+    margin: 2px 40px 6px 0px;
+    font-size: 4vh;
+    border-width: 100%;
+    color: rgb(4, 11, 45);
+}
+.menu-item:hover {
+    opacity: 65%;
+    cursor: pointer;
+}
+.menu-item:active {
+    opacity: 35%;
+}
+.heading {
+    font-size: 90px;
+    font-weight: 800;
+    opacity: 82%;
+    color: aliceblue;
+    word-spacing: 7px;
+    letter-spacing: 4px;
+    text-align: center;
+}
