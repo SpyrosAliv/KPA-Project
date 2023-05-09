@@ -14,11 +14,13 @@ body {
     padding-left: 12%;
 } img {
     padding-top: 5vh;
-} #info {
+} .plot-img {
+    padding-bottom: 5vh;
+} 
+#info {
     width:100%;
     align-items: center;
-}
-.info-text {
+} .info-text {
     padding: 20px;
 } #starting-title {
     height: 90vh;
@@ -54,10 +56,14 @@ body {
     word-spacing: 7px;
     letter-spacing: 4px;
     text-align: center;
-} .info-paragraph {
+} section {
     align-items: center;
     height: fit-content;
     text-align: center;
     padding: 0px 20px 5vh 20px;
     justify-content: center;
-} 
+} .medium-title {
+    font-size: 40px;
+    color:rgb(200, 188, 228);
+    opacity: 99%;
+}
