@@ -10,7 +10,10 @@ body {
     font-size: 27px;
     color: rgb(206, 204, 242);
     opacity: 95%;
-} .info-text {
+} img {
+    padding-top: 5vh;
+}
+.info-text {
     padding: 20px;
 } #starting-title {
     height: 90vh;
@@ -18,7 +21,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-} #menu {
+    text-align: center;
+} .tab-title {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}  #menu {
     background-color: aliceblue;
     height: fit-content;
     opacity: 75%;
@@ -43,6 +50,7 @@ body {
     letter-spacing: 4px;
     text-align: center;
 } .info-paragraph {
+    height: fit-content;
     text-align: center;
-    padding: 40px 20px 10px 20px;
+    padding: 0px 20px 5vh 20px;
 }
