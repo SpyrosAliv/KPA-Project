@@ -1,8 +1,17 @@
-const infoDisplay = document.querySelector("#info");
+const infoDisplay = document.querySelector("#space-odyssey-info");
 const plotDesc = document.querySelector("#plot-description");
 const finalDisplay = document.querySelector("#finale");
 const spaceOdyssey = document.querySelector("#space-odyssey");
-const spaceOdysseyMenu = document.querySelector("#menu");
+
+const twelveAngryMen = document.querySelector("#twelve-angry-men");
+const infoAngryMen = document.querySelector("#twelve-angry-men-info");
+const plotAngryMen = document.querySelector("#twelve-angry-men-plot");
+
+function clearAngryMen() {
+    infoAngryMen.hidden = true;
+    plotAngryMen.hidden = true;
+}
+
 function clearSpaceOdyssey() {
     finalDisplay.hidden=true;
     infoDisplay.hidden = true;
@@ -10,15 +19,22 @@ function clearSpaceOdyssey() {
 }
 
 function callSpaceOdyssey() {
+    twelveAngryMen.hidden = true;
     spaceOdyssey.hidden = false;
     loadGeneralInfo();
-    spaceOdysseyMenu.scrollIntoView();
+    document.querySelector("#space-odyssey-menu").scrollIntoView();
+}
+
+function callAngryMen() {
+    spaceOdyssey.hidden = true;
+    twelveAngryMen.hidden = false;
+    loadGeneralInfoAngry();
+    document.querySelector("#angry-men-menu").scrollIntoView();
 }
 
 window.onload = () => {
-    finalDisplay.hidden=true;
-    infoDisplay.hidden = true;
-    plotDesc.hidden = true;
+    clearSpaceOdyssey();
+    twelveAngryMen.hidden=true;
     spaceOdyssey.hidden = true;
 }
 
@@ -35,4 +51,14 @@ function loadPlotDescription() {
 function loadFinaleInfo() {
     clearSpaceOdyssey();
     finalDisplay.hidden = false;
+}
+
+function loadGeneralInfoAngry() {
+    clearAngryMen();
+    infoAngryMen.hidden = false;
+}
+
+function loadPlotAngry() {
+    clearAngryMen();
+    plotAngryMen.hidden = false;
 }

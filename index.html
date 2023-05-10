@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp>
+<html>
 <body>
 <section id="choose-film" class="significant-section" >
     <div class="title-container" id="choose-film-title">
@@ -7,13 +7,13 @@
     </div>
 
     <div class="container" id="choose-film-selector">
-        <button class="film-option" id="twelve-angry-men-option"></button>
+        <button class="film-option" id="twelve-angry-men-option" onclick="callAngryMen()"></button>
         <button class="film-option" id="space-odyssey-option" onclick="callSpaceOdyssey()"></button>
     </div>
 
 </section>
 <section id="space-odyssey" class="significant-section">
-    <div class="container" id="menu">
+    <div class="container menu" id="space-odyssey-menu">
         <button class="menu-item" onclick="loadGeneralInfo()">Πληροφορίες</button>
         <button class="menu-item" onclick="loadPlotDescription()">Περίληψη</button>
         <button class="menu-item" onclick="loadFinaleInfo()">Επίλογος</button>
@@ -22,7 +22,7 @@
 
     <div class="container" id="main-div">
 
-        <div id="info">
+        <div class="info" id="space-odyssey-info">
             <div class="title-container tab-title">
                 <header class="bigTitle">ΓΕΝΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ</header>
             </div>            
@@ -48,7 +48,7 @@
                     φαντασίας όλων των εποχών</b>. Αξιοσημείωτη είναι, επίσης, η εξαιρετική 
                     χρήση της μουσικής που σε συνδυασμό με τα οπτικά εφέ, τα οποία κέρδισαν 
                     Όσκαρ, μαγεύουν τον θεατή. </p>
-                <img src="images/spaceOdyssey-infoPar2.webp" width="75%" height="100%">
+                <img src="images/spaceOdyssey-infoPar2.webp" width="75%">
             </section>
             <section class="info-paragraph" id="info-par3">
                 <p>Το 1991, χαρακτηρίστηκε <em>«πολιτιστικά, ιστορικά ή αισθητικά σημαντική»</em> από τη Βιβλιοθήκη 
@@ -111,8 +111,8 @@
                 Γράφεται και λέγεται, όμως, πως οι μονόλιθοι ίσως να συμβολίζουν και τον Θεό.</p>
                 <iframe style="padding-top: 5vh;" width="75%" height="713" src="https://www.youtube.com/embed/8iWmzp7EPPw" title="2001: A Space Odyssey (1968) - Jupiter and Beyond the Infinite [HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p style="padding-top: 5vh;">Η απόβαση του Bowman στον πλανήτη ξεδιπλώνει υπαρξιακά ανθρώπινα ζητήματα, 
-                    τον φόβο και την εξερεύνηση του αγνώστου, τη δύναμη και την συνειδητοποίηση της 
-                    ζωής και του θανάτου, η επαφή του ανθρώπου με το θάνατό του με ολόκληρο το σύμπαν.</p>
+                τον φόβο και την εξερεύνηση του αγνώστου, τη δύναμη και την συνειδητοποίηση της 
+                ζωής και του θανάτου, η επαφή του ανθρώπου με το θάνατό του με ολόκληρο το σύμπαν.</p>
             </section>
         </div>
 
@@ -133,14 +133,49 @@
         </div>
     </div>
 </section>
-</body>
 
+<section id="twelve-angry-men" class="significant-section">
+    <div class="container menu" id="angry-men-menu">
+        <button class="menu-item" onclick="loadGeneralInfoAngry()">Πληροφορίες</button>
+        <button class="menu-item" onclick="loadPlotAngry()">Περίληψη</button>
+        <button class="menu-item">Επίλογος</button>
+    </div>
+
+    <div class="info" id="twelve-angry-men-info">
+        <div class="title-container tab-title">
+            <header class="bigTitle">ΓΕΝΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ</header>
+        </div>
+        <p class="angry-men-p">Η ταινία “12 Angry Men” είναι αμερικανικής παραγωγής γυρισμένη στην Νέα Υόρκη το 1957 
+            με σκηνοθέτη τον Sidney Lumet. Πρωταγωνιστούν δώδεκα χαρακτήρες, με τους σημαντικότερους τους: Henry Fonda 
+            (juror 8), Martin Balsam (Juror 1), Lee J. Cobb (Juror 3), Joseph Sweeney (Juror 9).</p>
+        <img src="images/12angrymen-wholeJury.webp" width="65%">
+        <p class="angry-men-p" style="padding-top: 3vh; padding-bottom: 3vh;">Η ταινία είναι βασισμένη στην τηλεοπτική σειρά που επίσης λεγόταν 
+            “12 Angry Men”. Η σειρά ήταν πετυχημένη οπότε αποφασίστηκε να γυριστεί σε ταινία κανονικού μήκους, η πρώτη που 
+            σκηνοθέτησε ο Lumet. </p>
+    </div>
+    
+    <div id="twelve-angry-men-plot">
+        <div class="title-container tab-title">
+            <header class="bigTitle">ΠΕΡΙΛΗΨΗ</header>
+        </div>
+        <p class="angry-men-p">Η πλοκή ακολουθεί το δράμα δώδεκα ενόρκων, πάνω σε κάποιες πολύ σημαντικές αποφάσεις: αν ο έφηβος 
+            κατηγορούμενος είναι πραγματικά ένοχος και αν θα πρέπει να ζήσει ή όχι. Όμως για να παρθεί η τελική απόφαση θα πρέπει 
+            να είναι όλοι τους σύμφωνοι.</p>        
+        <img src="images/2796.webp" width="60%">
+        <p class="angry-men-p" style="padding-top: 3vh;">Ο κατηγορούμενος λέγεται πως μαχαίρωσε τον υβριστικό του πατέρα. Αρχικά, όλοι εκτός από τον όγδοο 
+            ένορκο τον ψηφίζουν ως ένοχο. Για κάποιους οι λόγοι είναι επιφανειακοί, όπως του εβδόμου ενόρκου, ο οποίος ανησυχεί
+            περισσότερο από την δίκη για το αν θα χάσει έναν αγώνα baseball. Για άλλους οι λόγοι είναι πιο περίπλοκοι και 
+            παρουσιάζονται κατά την εξέλιξη της ιστορίας.</p>
+        <img src="images/12angrymen-votingProcess.webp" width="60%">
+        <p class="angry-men-p" style="padding-top: 3vh; padding-bottom: 3vh;">Με την πλοκή αρχίζουμε να λαμβάνουμε περισσότερα στοιχεία πάνω στην υπόθεση,
+            κάποια από τα οποία ακυρώνουν τις καταθέσεις των ενόχων. Ο όγδοος ένοχος συνεχίζει να υποστηρίζει την άποψή του, όσο και
+            αν προσπαθούν να τον πείσουν να ψηφίσει αντιθέτως. Σιγά σιγά, αρχίζει να αλλάζει την γνώμη τους, έναν έναν κατά σειρά. 
+            Αντιμετωπίζει την αγένεια, την κοροϊδία και την ανυπομονησία τους μέχρι να μείνει ένας τελευταίος. Εκείνος ομολογεί πως
+            εύχεται ο κατηγορούμενος να ήταν ένοχος λόγω της σχέσης του με τον γιό του. </p>
+    </div>
+</section>
+</body>
 <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link rel="canonical" href="$SOME_URL">
-    <meta name="viewport" content="width=device-width" />
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="stylesheet" href="style.css">
     <title>2001: A Space Odyssey - ΚΠΑ</title>
     <script src="script.js"></script>
