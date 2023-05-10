@@ -16,8 +16,7 @@ body {
     padding-top: 5vh;
 } .plot-img {
     padding-bottom: 5vh;
-} 
-#info {
+} #info {
     width:100%;
     align-items: center;
 } .info-text {
