@@ -12,10 +12,10 @@
     min-height:38vh;
     height: 63vh;
 } #space-odyssey-option {
-    background-image: url("images/space-odyssey-poster.jpg");
+    background-image: url("images/space-odyssey-poster.webp");
     background-size: cover;
 } #twelve-angry-men-option {
-    background-image: url("images/12AngryMen-filmPoster.jpg");
+    background-image: url("images/12AngryMen-filmPoster.webp");
     background-size: cover;
 } * {
     font-family: 'Montserrat', sans-serif;
