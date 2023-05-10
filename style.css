@@ -1,11 +1,37 @@
-body {
-    background: rgb(41,5,70);
-    background: radial-gradient(circle, rgba(41,5,70,1) 0%, rgba(16,0,125,1) 100%);
+#space-odyssey {
+    background: rgb(91,43,142);
+    background: repeating-radial-gradient(circle, rgba(91,43,142,1) 0%, rgba(0,0,0,1) 100%);
+} #choose-film {
+    background: rgb(130,32,76);
+    background: repeating-radial-gradient(circle, rgba(130,32,76,1) 0%, rgba(0,0,0,1) 100%);
+} #choose-film-selector {
+    width: 100%;
+} .film-option {
+    margin: 3vh;
+    width:40vh;
+    min-height:38vh;
+    height: 63vh;
+} #space-odyssey-option {
+    background-image: url("images/space-odyssey-poster.jpg");
+    background-size: cover;
+} #twelve-angry-men-option {
+    background-image: url("images/12AngryMen-filmPoster.jpg");
+    background-size: cover;
 } * {
     font-family: 'Montserrat', sans-serif;
     padding: 0px;
     margin: 0px;
     border: 0px;
+} button:hover {
+    cursor: pointer;
+    opacity: 80%;
+} button:active {
+    opacity: 50%;
+} .significant-section {
+    padding: 0px; 
+    min-height: 100vh; 
+    height: fit-content;
+    width: 100%;
 } p {
     font-size: 27px;
     color: rgb(206, 204, 242);

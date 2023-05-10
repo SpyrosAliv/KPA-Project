@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
+<section id="choose-film" class="significant-section">
+    <div class="title-container" id="choose-film-title">
+        <header class="bigTitle" style="padding-top: 5vh;">ΕΠΙΛΟΓΗ ΤΑΙΝΙΑΣ</header>
+    </div>
+
+    <div class="container" id="choose-film-selector">
+        <button class="film-option" id="twelve-angry-men-option"></button>
+        <button class="film-option" id="space-odyssey-option" onclick="callSpaceOdyssey()"></button>
+    </div>
+
+</section>
+<section id="space-odyssey" class="significant-section">
     <div class="container" id="menu">
         <button class="menu-item" onclick="loadGeneralInfo()">Πληροφορίες</button>
         <button class="menu-item" onclick="loadPlotDescription()">Περίληψη</button>
         <button class="menu-item" onclick="loadFinaleInfo()">Επίλογος</button>
     </div>
-    </div>
-    <div class="title-container" id="starting-title">
-        <div class="title">
-            <heading id="main-heading" class="bigTitle">2001: A SPACE ODYSSEY</heading>
-        </div>
     </div>
 
     <div class="container" id="main-div">
@@ -123,10 +130,11 @@
                     όσο και τέχνης και ανθρωπιστικής και πολιτιστικής αξίας. Έθεσε ζητήματα πανανθρώπινα και εξαιρετικής σημασίας 
                     σε εποχή που κανείς δεν μπορούσε να διανοηθεί.</p>
             </section>
-
         </div>
     </div>
+</section>
 </body>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title>2001: A Space Odyssey - ΚΠΑ</title>
