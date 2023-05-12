@@ -6,10 +6,12 @@ const spaceOdyssey = document.querySelector("#space-odyssey");
 const twelveAngryMen = document.querySelector("#twelve-angry-men");
 const infoAngryMen = document.querySelector("#twelve-angry-men-info");
 const plotAngryMen = document.querySelector("#twelve-angry-men-plot");
+const finalAngryMen = document.querySelector("#twelve-angry-men-final");
 
 function clearAngryMen() {
     infoAngryMen.hidden = true;
     plotAngryMen.hidden = true;
+    finalAngryMen.hidden = true;
 }
 
 function clearSpaceOdyssey() {
@@ -61,4 +63,9 @@ function loadGeneralInfoAngry() {
 function loadPlotAngry() {
     clearAngryMen();
     plotAngryMen.hidden = false;
+}
+
+function loadFinalAngry() {
+    clearAngryMen();
+    finalAngryMen.hidden = false;
 }
